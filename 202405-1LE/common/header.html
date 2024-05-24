@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link para o Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+</head>
+<style>
+    /* Custom styles for the header */
+    html, body {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			width: 100%;
+			overflow: hidden;
+		}
+    .header {
+        background-color: #0d7044;
+        padding: 20px;
+        max-height: 200px;
+        text-align: center;
+        overflow:hidden;
+        height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo {
+        width: auto;
+        height: auto;
+        max-height: 100%;
+        float:left;
+    }
+    .sponsor {
+        width: auto;
+        height: auto;
+        max-height: 80px;
+
+        float:right;
+        cursor: pointer;
+
+    }
+    .header-text {
+        color: white;
+        text-align: center;
+        margin: auto;
+    }
+
+      /* Responsive styles */
+      @media (max-width: 767px) {
+            .logo {
+                max-height: 50px;
+                margin-right: 5px;
+            }
+            .header-text {
+                margin-left: 5%;
+                margin-right: 5%;
+                font-size: 20px;
+            }
+            .header {
+                padding: 10px;
+                max-height: 100px;
+            }
+            .sponsor{
+                max-width: 100px;
+            }
+        }
+</style>
+<body>    
+    <div class="header">
+        <img src="../assets/images/logo.png" alt="Quinta de Monserrate logo" class="logo">
+        <h1 class="header-text">1a Liga Evolution Fit Studio</h1>
+        
+        <img src="../assets/images/sponsor.png" alt="Evolution Fit Studio logo" class="sponsor" onclick="clickLetra()">
+    </div>
+</body>
+</html>
+
+<script>
+    function clickLetra() {
+        window.open("https://www.instagram.com/evolution_fitstudio/", "_blank");
+    }
+</script>
